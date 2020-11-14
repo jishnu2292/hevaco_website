@@ -17,7 +17,67 @@ Author URL: http://w3layouts.com
   <link href="//fonts.googleapis.com/css?family=Muli:300,300i,400,500,600,700,800,900&display=swap" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700,900&display=swap" rel="stylesheet">
   <!-- Template CSS -->
+  <style>
+  	.w3l-banner-slider-main a.navbar-brand {
+    font-size: 20px;
+}
+.w3l-top-header-content .social-top li {
+    padding: 10px 10px;
+}
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
 
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/* IE */
+@-ms-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+.blink-image {
+    -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+    animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+}
+  </style>
 </head>
 <body>
 
@@ -28,7 +88,9 @@ Author URL: http://w3layouts.com
 			<div class="container-fluid">
 				<div class="row">
 					<ul class="social-top col-md-7">
-						<li class="log-link mr-3"><a class="sign-in"  href="#"><span class="fa fa-user"></span> Sign In</a></li>
+						<!-- <li class="log-link mr-3">
+							<a class="sign-in"  href="#"><span class="fa fa-user"></span> Sign In</a>
+						</li> -->
 						<li><a href="#"><span class="fa fa-facebook"></span></a></li>
 						<li><a href="#"><span class="fa fa-instagram"></span></a> </li>
 						<li><a href="#"><span class="fa fa-twitter"></span></a></li>
@@ -69,9 +131,9 @@ Author URL: http://w3layouts.com
 					<a class="navbar-brand" href="index.html">
 					<!-- if logo is image enable this    -->
 						<!-- <a class="navbar-brand" href="#index.html"> -->
-							<img src="assets/images/hevaco/hevaco_427x89.png" alt="Your logo" title="Your logo" style="height:50px;" />
+							<img src="assets/images/hevaco/hevaco_427x89.png" alt="Your logo" title="Your logo" style="height:60px;    margin-top: -30px;" />
 						<!-- </a> -->
-						Cooling Systems</a>
+						<label class="lohny"><span>Cooling Systems</span></label></a>
 						<!-- <label class="lohny"><span class="fa fa-graduation-cap" aria-hidden="true"></span>HEVACO &nbsp;</label>Cooling Systems</a> -->
 					<button class="navbar-toggler" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -88,20 +150,27 @@ Author URL: http://w3layouts.com
 								<a class="nav-link" href="about.html">About</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="services.html">Courses</a>
+								<a class="nav-link" href="about.html">Company Profile</a>
 							</li>
-
-						
+							<li class="nav-item">
+								<a class="nav-link" href="services.html">Products</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about.html">Management</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="services.html">Our Clients</a>
+							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="contact.html">Contact</a>
 							</li>
 						</ul>
 
 					</div>
-					<form action="#" method="post" class="d-flex searchhny-form">
-						<input type="search" placeholder="Search Here..." required="required">
-						<button type="submit"><span class="fa fa-search" aria-hidden="true"></span></button>
-					</form>
+					
+					<div class="d-flex ">
+					<img class="blink-image" src="assets/images/hevaco/iso_logo.png" alt="Your logo" title="Your logo" style="width: 170px;"/>
+</div>
 				</div>
 			</nav>
 			<!--//nav-->
@@ -120,7 +189,7 @@ Author URL: http://w3layouts.com
 					<div class="container">
 						<div class="carousel-caption">
 
-							<h3>Motivated by the desire to Achieve</h3>
+							<h3>No One Knows Summer Like We Do !!!</h3>
 							<p>They get their doubts solved instantly, 24x7</p>
 							<div class="button-4 mx-auto">
 								<div class="eff-4"></div>
@@ -130,11 +199,10 @@ Author URL: http://w3layouts.com
 						</div>
 					</div>
 				</div>
-				<div class="carousel-item item2">
+				<!-- <div class="carousel-item item2">
 					<div class="container">
 						<div class="carousel-caption">
-							<h3>One class can
-								change everything.</h3>
+							<h3></h3>
 							<p>We believe that every student is unique</p>
 							<div class="button-4 mx-auto">
 								<div class="eff-4"></div>
@@ -142,11 +210,11 @@ Author URL: http://w3layouts.com
 							  </div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<div class="carousel-item item3">
 					<div class="container">
 						<div class="carousel-caption">
-							<h3>Motivated by the desire to Achieve</h3>
+							<h3>Hevaco provides excellent service to our clients</h3>
 							<p>They get their doubts solved instantly, 24x7</p>
 							<div class="button-4 mx-auto">
 								<div class="eff-4"></div>
@@ -158,8 +226,7 @@ Author URL: http://w3layouts.com
 				<div class="carousel-item item4">
 					<div class="container">
 						<div class="carousel-caption">
-							<h3>Better learning
-								for better results.</h3>
+							<h3>Hevaco is an ISO Certified and SSI registered company</h3>
 							<p>We believe that every student is unique</p>
 							<div class="button-4 mx-auto">
 								<div class="eff-4"></div>
@@ -191,32 +258,31 @@ Author URL: http://w3layouts.com
 
 			<div class="row title-content">
 				<div class="col-lg-4 title-left">
-					<h3 class="hny-title">What do you want to Learn today?</h3>
+					<h3 class="hny-title">About Us</h3>
 				</div>
 				<div class="col-lg-8 title-info">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eligendi minima accusantium
-						reiciendis, cupiditate optio corrupti quis quam at!.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+					<p>Hevaco Cooling Systems (P) Ltd was incorporated in Trivandrum with the sole intention of providing superior air-conditioning and ventilation solutions to its customers' using world-renowned Voltas® technology. We believe that attention to details, expert analysis, installation and service of high quality equipment translates into very high level of customer satisfaction, which is the best way to measure our success. Within these pages you will find information about Hevaco, the various Voltas® products we make available and our services.</p>
 				</div>
 			</div>
 
 			<div class="content-info-in row mt-md-5 mt-4">
 				<div class="col-lg-3 col-md-6 imghrs">
-					<a class="imghr" href="#"><img src="assets/images/1.jpg" class="img-fluid" alt="">
+					<a class="imghr" href="#"><img src="assets/images/hevaco/img/Hevaco_iso.png" class="img-fluid" alt="">
 						<div class="details"><span class="title">Development</span><span class="info">Add Description</span></div>
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-6 imghrs">
-					<a class="imghr" href="#"><img src="assets/images/2.jpg" class="img-fluid" alt="">
+					<a class="imghr" href="#"><img src="assets/images/hevaco/img/Voltas_logo.png" class="img-fluid" alt="">
 						<div class="details"><span class="title">Graphic Design</span><span class="info">Add Description</span></div>
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-6 imghrs">
-					<a class="imghr" href="#"><img src="assets/images/3.jpg" class="img-fluid" alt="">
+					<a class="imghr" href="#"><img src="assets/images/hevaco/img/voltas_round.png" class="img-fluid" alt="">
 						<div class="details"><span class="title">Languages</span><span class="info">Add Description</span></div>
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-6 imghrs">
-					<a class="imghr" href="#"><img src="assets/images/4.jpg" class="img-fluid" alt="">
+					<a class="imghr" href="#"><img src="assets/images/hevaco/img/Hevaco_iso.png" class="img-fluid" alt="">
 						<div class="details"><span class="title">Photography</span><span class="info">Add Description</span></div>
 					</a>
 				</div>
@@ -231,11 +297,9 @@ Author URL: http://w3layouts.com
 </section>
 <!-- //content-6-section -->
 <section class="w3l-features-1">
-	<!-- /features-1-->
 	<div class="features-1-mian py-5">
 		<div class="container py-lg-5">
-			<!-- /title-->
-			<div class="row title-content">
+			<!-- <div class="row title-content">
 				<div class="col-lg-4 title-left">
 					<h3 class="hny-title">What do you want to Learn today?</h3>
 				</div>
@@ -245,8 +309,6 @@ Author URL: http://w3layouts.com
 						voluptate velit esse cillum.</p>
 				</div>
 			</div>
-			<!-- //title-->
-			<!-- /grids-->
 			<div class="row grids-innf my-lg-5">
 				<div class="features-1-info col-lg-3 col-md-6">
 					<div class="features-1-info-icon">
@@ -287,6 +349,36 @@ Author URL: http://w3layouts.com
 						<p>Lorem ipsum dolor sit amet,Ea consequuntur.</p>
 					</div>
 				</div>
+			</div> -->
+
+			<div class="row title-content">
+				<div class="col-lg-4 title-left">
+					<h3 class="hny-title">What we do?</h3>
+				</div>
+				<div class="col-lg-8 title-info">
+					
+			<div class="row grids-innf my-lg-5">
+				<div class="features-1-info col-lg-6 col-md-6">
+					<div class="features-1-info-icon">
+						<span class="fa fa-thumbs-o-up"></span>
+					</div>
+					<div class="features-1-info-info">
+						<h6><a href="#">Our Vision</a></h6>
+						<p>Cool Solutions and a Green Environment.</p>
+					</div>
+
+				</div>
+				<div class="features-1-info col-lg-6 col-md-6">
+					<div class="features-1-info-icon">
+						<span class="fa fa-trophy"></span>
+					</div>
+					<div class="features-1-info-info">
+						<h6><a href="#">Our Mission</a></h6>
+						<p>Total Customer Satisfaction in terms of Price, Performance and Maintenance.</p>
+					</div>
+				</div>
+			</div>
+				</div>
 			</div>
 			<!-- //grids-->
 			<!-- /counter-->
@@ -302,7 +394,7 @@ Author URL: http://w3layouts.com
 					</div>
 					<div class="counter-gd">
 						<h6>90k</h6>
-						<h4>Courses</h4>
+						<h4>Clients</h4>
 					</div>
 					<div class="counter-gd">
 						<h6>40k</h6>
@@ -316,43 +408,7 @@ Author URL: http://w3layouts.com
 	</div>
 </section>
 <!-- //features-1-->
-<section class="w3l-video-main">
-	<!-- /video-6-->
-	<div class="video-66-info">
-		<div class="container-fluid">
-			<div class="video-grids-info row">
-				<div class="video-gd-right col-lg-8">
-					<div class="video-inner history-info text-center">
-								<!--popup-->
-								<a href="#small-dialog" class="popup-with-zoom-anim play-view text-center position-absolute">
-									<span class="video-play-icon">
-									  <span class="fa fa-play"></span>
-									</span>
-								  </a>
-					  
-								  <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
-								  <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
-									<iframe src="https://player.vimeo.com/video/279436396"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-								  </div>
-									<!--//popup-->
-					      </div>
-				  </div>
-				<div class="video-gd-left col-lg-4 p-lg-5 p-4">
-					<div class="p-xl-4 p-0 video-wrap">
-						<h3 class="hny-title text-left">
-							Online learning offers a new way to explore subjects </h3>
-						<p>Find the right instructor for you from over 10,000 teachers</p>
-						<div class="button-4-pink">
-							<div class="eff-4-pink"></div>
-							<a href="services.html"> Read More</a>
-						  </div>
-					</div>
-				</div>
 
-			</div>
-		</div>
-	</div>
-</section>
 <!-- //video-6-->
 <!-- portfolio -->
 
@@ -361,7 +417,7 @@ Author URL: http://w3layouts.com
 		<div class="container pt-lg-5 pb-lg-4">
 			<div class="row title-content">
 				<div class="col-lg-4 title-left">
-					<h3 class="hny-title">Top Online Courses</h3>
+					<h3 class="hny-title">Our Works</h3>
 				</div>
 				<div class="col-lg-8 title-info">
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eligendi minima accusantium
@@ -390,17 +446,7 @@ Author URL: http://w3layouts.com
 								<h3 class="course-title" data-gal="prettyPhoto[gallery]">Development</h3>
 							</a>
 						</div>
-						<div class="course-divider">
-							<div class="course-meta grid"><span class="course-students" title=""><span
-										class="fa fa-user" aria-hidden="true"></span> 46</span>
-								<span class="course-reviews" title=""><span class="fa fa-thumbs-o-up"
-										aria-hidden="true"></span> 14</span>
-
-							</div>
-							<button class="price-course btn"> $300 </button>
-
-
-						</div>
+					
 					</div>
 				</div>
 
@@ -416,17 +462,7 @@ Author URL: http://w3layouts.com
 								<h3 class="course-title" data-gal="prettyPhoto[gallery]">Creative Art</h3>
 							</a>
 						</div>
-						<div class="course-divider">
-							<div class="course-meta grid"><span class="course-students" title=""><span
-										class="fa fa-user" aria-hidden="true"></span> 26</span>
-								<span class="course-reviews" title=""><span class="fa fa-thumbs-o-up"
-										aria-hidden="true"></span> 24</span>
-
-							</div>
-							<button class="price-course btn"> $600 </button>
-
-
-						</div>
+						
 					</div>
 				</div>
 
@@ -441,17 +477,7 @@ Author URL: http://w3layouts.com
 								<h3 class="course-title" data-gal="prettyPhoto[gallery]">Interior Design</h3>
 							</a>
 						</div>
-						<div class="course-divider">
-							<div class="course-meta grid"><span class="course-students" title=""><span
-										class="fa fa-user" aria-hidden="true"></span> 36</span>
-								<span class="course-reviews" title=""><span class="fa fa-thumbs-o-up"
-										aria-hidden="true"></span> 34</span>
-
-							</div>
-							<button class="price-course btn"> $300 </button>
-
-
-						</div>
+						
 					</div>
 				</div>
 
@@ -466,17 +492,7 @@ Author URL: http://w3layouts.com
 								<h3 class="course-title" data-gal="prettyPhoto[gallery]">Tech and Coding</h3>
 							</a>
 						</div>
-						<div class="course-divider">
-							<div class="course-meta grid"><span class="course-students" title=""><span
-										class="fa fa-user" aria-hidden="true"></span> 46</span>
-								<span class="course-reviews" title=""><span class="fa fa-thumbs-o-up"
-										aria-hidden="true"></span> 14</span>
-
-							</div>
-							<button class="price-course btn"> $500 </button>
-
-
-						</div>
+					
 					</div>
 				</div>
 
@@ -492,17 +508,7 @@ Author URL: http://w3layouts.com
 								<h3 class="course-title" data-gal="prettyPhoto[gallery]">Literature</h3>
 							</a>
 						</div>
-						<div class="course-divider">
-							<div class="course-meta grid"><span class="course-students" title=""><span
-										class="fa fa-user" aria-hidden="true"></span> 36</span>
-								<span class="course-reviews" title=""><span class="fa fa-thumbs-o-up"
-										aria-hidden="true"></span> 34</span>
-
-							</div>
-							<button class="price-course btn"> $200 </button>
-
-
-						</div>
+					
 					</div>
 				</div>
 
@@ -518,17 +524,7 @@ Author URL: http://w3layouts.com
 								<h3 class="course-title" data-gal="prettyPhoto[gallery]">Business</h3>
 							</a>
 						</div>
-						<div class="course-divider">
-							<div class="course-meta grid"><span class="course-students" title=""><span
-										class="fa fa-user" aria-hidden="true"></span> 56</span>
-								<span class="course-reviews" title=""><span class="fa fa-thumbs-o-up"
-										aria-hidden="true"></span> 44</span>
-
-							</div>
-							<button class="price-course btn"> $400 </button>
-
-
-						</div>
+					
 					</div>
 				</div>
 				<div class="col-md-3 filter photo">
@@ -543,17 +539,7 @@ Author URL: http://w3layouts.com
 								<h3 class="course-title" data-gal="prettyPhoto[gallery]">Graphic Design</h3>
 							</a>
 						</div>
-						<div class="course-divider">
-							<div class="course-meta grid"><span class="course-students" title=""><span
-										class="fa fa-user" aria-hidden="true"></span> 46</span>
-								<span class="course-reviews" title=""><span class="fa fa-thumbs-o-up"
-										aria-hidden="true"></span> 14</span>
-
-							</div>
-							<button class="price-course btn"> $300 </button>
-
-
-						</div>
+					
 					</div>
 				</div>
 				<div class="col-md-3 filter webdesign graphic">
@@ -567,17 +553,7 @@ Author URL: http://w3layouts.com
 								<h3 class="course-title" data-gal="prettyPhoto[gallery]">Languages</h3>
 							</a>
 						</div>
-						<div class="course-divider">
-							<div class="course-meta grid"><span class="course-students" title=""><span
-										class="fa fa-user" aria-hidden="true"></span> 46</span>
-								<span class="course-reviews" title=""><span class="fa fa-thumbs-o-up"
-										aria-hidden="true"></span> 34</span>
-
-							</div>
-							<button class="price-course btn"> $500 </button>
-
-
-						</div>
+					
 					</div>
 				</div>
 			</div>
@@ -587,168 +563,17 @@ Author URL: http://w3layouts.com
 </section>
 
 
-<!-- //portfolio -->
-<section class="w3l-apply-6">
-	<!-- /apply-6-->
-	<div class="apply-info py-5">
-		<div class="container py-lg-5">
-			<div class="apply-grids-info row">
-				<div class="apply-gd-left col-lg-7">
-						<label>Welcome Our Eduline</label>
-						<h4>Apply for Admission</h4>
-						<p class="para-apply">It’s limited seating! Hurry up. Get the Coaching Training for Free</p>
-					<div class="row mt-lg-5 mt-4">
-						<div class="col-md-6 sub-apply mt-4">
-								<div class="apply-sec-info">
-										<div class="appyl-sub-icon">
-											<span class="fa fa-line-chart"></span>
-										</div>
-										<div class="appyl-sub-icon-info">
-												<h5><a href="#">Empower Teachers</a></h5>
-											<p>Lorem ipsum dolor sit amet,Ea consequuntur.</p>
-										</div>
-					
-									</div>
-
-						</div>
-						<div class="col-md-6 sub-apply mt-4">
-								<div class="apply-sec-info">
-										<div class="appyl-sub-icon">
-											<span class="fa fa-clock-o"></span>
-										</div>
-										<div class="appyl-sub-icon-info">
-												<h5><a href="#">Lifetime access</a></h5>
-											<p>Lorem ipsum dolor sit amet,Ea consequuntur.</p>
-										</div>
-					
-									</div>
-						</div>
-					</div>
-				</div>
-				<div class="apply-gd-right col-lg-5 mt-lg-0 mt-5">
-	
-					<div class="apply-form p-md-5 p-4 mx-auto bg-white mw-100">
-						<form action="#" method="post">
-							<div class="form-group">
-								<label>First name</label>
-
-								<input type="text" class="form-control" id="validationDefault01" placeholder=""
-									required="">
-							</div>
-							<div class="form-group">
-								<label>Last name</label>
-								<input type="text" class="form-control" id="validationDefault02" placeholder=""
-									required="">
-							</div>
-
-							<div class="form-group mb-4">
-								<label class="mb-2">Password</label>
-								<input type="password" class="form-control" id="password1" placeholder="" required="">
-							</div>
-
-							<button type="submit" class="btn btn-primary submit">Apply Now</button>
-
-						</form>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- //apply-6-->
-
-<section class="w3l-customers-6">
-	<!--/customers -->
-	<div class="customers-6-infhny py-5">
-		<div class="container py-lg-5">
-
-				<div class="row title-content mb-5">
-						<div class="col-lg-4 title-left">
-							<h3 class="hny-title">Happy Students</h3>
-						</div>
-						<div class="col-lg-8 title-info">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eligendi minima accusantium
-								reiciendis, cupiditate optio corrupti quis quam at!.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-						</div>
-					</div>
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-						<!-- Carousel indicators -->
-						<ol class="carousel-indicators">
-							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-							<li data-target="#myCarousel" data-slide-to="1"></li>
-							<li data-target="#myCarousel" data-slide-to="2"></li>
-						</ol>   
-						<!-- Wrapper for carousel items -->
-						<div class="carousel-inner">		
-							<div class="item carousel-item active">
-								<div class="img-box"><img src="assets/images/c1.jpg" alt=""></div>
-								<p class="testimonial">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur.Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.Nulla quis lorem neque, mattis venenatis lectus.</p>
-								<p class="overview"><b>Michael Holz</b>Seo Analyst at <a href="#">Company Exp.</a></p>
-								<div class="star-rating">
-									<ul class="list-inline">
-										<li class="list-inline-item"><span class="fa fa-star"></span></li>
-										<li class="list-inline-item"><span class="fa fa-star"></span></li>
-										<li class="list-inline-item"><span class="fa fa-star"></span></li>
-										<li class="list-inline-item"><span class="fa fa-star"></span></li>
-										<li class="list-inline-item"><span class="fa fa-star-o"></span></li>
-									</ul>
-								</div>
-							</div>
-							<div class="item carousel-item">
-								<div class="img-box"><img src="assets/images/c2.jpg" alt=""></div>
-								<p class="testimonial">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur.Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.Nulla quis lorem neque, mattis venenatis lectus.</p>
-								<p class="overview"><b>Paula Wilson</b>Media Analyst at <a href="#">Company Exp.</a></p>
-								<div class="star-rating">
-									<ul class="list-inline">
-										<li class="list-inline-item"><span class="fa fa-star"></span></li>
-										<li class="list-inline-item"><span class="fa fa-star"></span></li>
-										<li class="list-inline-item"><span class="fa fa-star"></span></li>
-										<li class="list-inline-item"><span class="fa fa-star"></span></li>
-										<li class="list-inline-item"><span class="fa fa-star-o"></span></li>
-									</ul>
-								</div>
-							</div>
-							<div class="item carousel-item">
-								<div class="img-box"><img src="assets/images/c3.jpg" alt=""></div>
-								<p class="testimonial">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur.Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.Nulla quis lorem neque, mattis venenatis lectus.</p>
-								<p class="overview"><b>Antonio Moreno</b>Web Developer at <a href="#">Company Exp.</a></p>
-								<div class="star-rating">
-									<ul class="list-inline">
-										<li class="list-inline-item"><span class="fa fa-star"></span></li>
-										<li class="list-inline-item"><span class="fa fa-star"></span></li>
-										<li class="list-inline-item"><span class="fa fa-star"></span></li>
-										<li class="list-inline-item"><span class="fa fa-star"></span></li>
-										<li class="list-inline-item"><span class="fa fa-star-half-o"></span></li>
-									</ul>
-								</div>
-							</div>		
-						</div>
-						<!-- Carousel controls -->
-						<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
-							<span class="fa fa-angle-left"></span>
-						</a>
-						<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
-							<span class="fa fa-angle-right"></span>
-						</a>
-					</div>
-		  </div>
-		<!--//customers -->
-	</div>
-</section>
-<!-- //customers-6-->
-
 <!-- footer -->
 <section class="w3l-footer-16">
     <div class="w3l-footer-16-main py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 column">
+                <div class="col-lg-6 column">
                     <div class="row">
                         <div class="col-md-8 column">
 
                                 <a class="logo-2" href="index.html">
-                                        <label class="lohny-2"><span class="fa fa-graduation-cap" aria-hidden="true"></span>Edu</label>Line</a>
+                                        <label class="lohny-2">Hevaco</label> Cooling Systems</a>
                            
                             <div class="ad-text-inf">
                                 <p><span class="color-hny">Address :</span> 27 Division St, New York, NY 10002, USA</p>
@@ -802,22 +627,12 @@ Author URL: http://w3layouts.com
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-6 column column4 mt-lg-0 mt-4">
-                    <h3>Newsletter </h3>
-                    <div class="end-column">
-                        <h4>Subscribe Here Now</h4>
-                        <form action="#" class="subscribe" method="post">
-                            <input type="email" name="email" placeholder="Email Address" required="">
-                            <button><span class="fa fa-paper-plane" aria-hidden="true"></span></button>
-                        </form>
-                        <p>Subscribe to our mailing list and get updates to your email inbox.</p>
-                    </div>
-                </div>
+             
             </div>
             <div class="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
                 <div class="columns text-lg-left text-center">
-                    <p>© 2020 Eduline. All rights reserved. Design by <a href="https://w3layouts.com/" target="_blank">
-                            W3Layouts</a>
+                    <p>© 2020 Hevaco. All rights reserved. <!-- Design by <a href="https://w3layouts.com/" target="_blank">
+                            W3Layouts</a> -->
                     </p>
                 </div>
                 <div class="columns-2 mt-md-0 mt-3">
